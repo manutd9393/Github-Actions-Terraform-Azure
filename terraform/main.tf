@@ -1,9 +1,9 @@
 terraform {
   backend "azurerm" {
-    resource_group_name  = "TerraformDemo"
-    storage_account_name = "terraformcodeops"
-    container_name       = "tfstatefile"
-    key                  = "dev.terraform.tfstate"
+    resource_group_name   = "tamopstfstates"
+    storage_account_name  = "tamopstf9393"
+    container_name        = "tfstatedevops"
+    key                   = "cliworkspaces-terraform.tfstate"
   }
 }
 module "RG" {
